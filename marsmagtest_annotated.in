@@ -1,0 +1,17 @@
+ Sphere wcirc  Remanent for Mars  Z component c1 (Depth adjust wrt areoid :at most -1/-2 km) [format is important for lines 2 to 6 ]
+     -88.0     120.0       0.5       0.5     150.0  157  281   [BL lat, BL lon, dlat, dlon, alt, nlat, nlon] 
+    2   16   16    0    [don't change these - this is related to gauss legendre quadr. coeffs]
+       0.1      1.50     198.5     204.5     0.080  [fictitious value, spacing for the  fixed longitude spacing for models,  westernmost lon of model,  easternmost lon of model, "susc. contrast": this times field strength on the next line (50000) divided by 10e05 is magnetization in emu/cc ] 
+    2    1   50000.0     120.0       0.0   [see the description inside the program for this and the next card... gravity or magnetic/which  component, whether anomaly of single body output or all bodies combined anomaly output, the last two are magnetization inclination and declination - but see the program description..]
+    0    2    1              [see the program description ]
+    9  -30.0     -50.0  [number of body coordinates,  depth to top, depth to bottom 
+  -18.00    204.50      [the key thing here is that the longitude coordinates for all body coordinates must be same (in this case, 1.50 as specified in the line 4 variable 2)
+  -17.50    203.00
+  -16.50    201.50
+  -17.50    200.00
+  -18.00    198.50
+  -19.25    200.00
+  -20.00    201.50
+  -19.25    203.00
+  -18.00    204.50
+For multiple bodies repeat all lines...
